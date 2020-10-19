@@ -1,0 +1,103 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    height: 500px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.search-index {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 44px;
+    min-width: 320px;
+    max-width: 540px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    font-size: 12px;
+    color: #049cdd;
+}
+
+.search {
+    flex: 1;
+    border: 1px solid #ccc;
+    margin: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-top: 4px;
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png) no-repeat -59px -279px;
+    background-size: 104px auto;
+}
+
+.user::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    background-size: 104px auto;
+    margin: auto;
+}
+
+.local-nav {
+    display: flex;
+    position: relative;
+    top: 49px;
+    margin: 3px 4px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.local-nav li {
+    flex: 1
+}
+
+.local-nav li a {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.local-nav li [class^="nav-icon"] {
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    width: 32px;
+    height: 32px;
+    background-size: 32px auto;
+}
